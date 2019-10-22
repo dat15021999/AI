@@ -1,0 +1,19 @@
+Q1:
+	Câu hỏi: Đưa ra giá trị cho hành động chuyền vào
+	Tr lời:
+		- Đánh giá giá trị cho hành động dựa vào khoảng cách Pacman đến ghost và Pacman đến thức ăn gần nhất 
+		- Chú ý: tham số dò ngẫu nhiên tới khi cho kết quả tốt
+
+Q2 + Q3 + Q4:
+	Câu hỏi: Đưa ra hành động tốt nhất cho Pacman dựa theo hành động của các tác tử khác và ở độ sâu cho sẵn (trạng thái game hiện tại)
+	Trả lời:
+		- Q2: Đánh giá giá trị của các hành động hợp lệ dựa theo thuật toán Minimax, sau đó đưa ra hành động tốt nhất khi tác tử là Pacman và độ sâu chạm self.depth
+		- Q3: Đánh giá giá trị của các hành động hợp lệ dựa theo thuật toán Aphabeta, sau đó đưa ra hành động tốt nhất khi tác tử là Pacman và độ sâu chạm self.depth
+		- Q4: Đánh giá giá trị của các hành động hợp lệ dựa theo thuật toán Expectimax, sau đó đưa ra hành động tốt nhất khi tác tác tử là Pacman và độ sâu chạm self.depth
+
+Q5:
+	Câu hỏi: Tương tự Q1 nhưng cho kết quả tốt hơn
+	Trả lời: 
+		- Ngoài khoảng cách Pacman tời ghost và thức ăn gần nhất, kết quả còn dựa theo số lượng thức ăn còn trên bàn (để Pacman ham ăn hơn) và số lượng thức ăn to còn trên bàn
+		- Ngoài ra, các thông số liên quan đến ma được thay đổi trong các trường hợp ma trong trạng thái sợ và thời gian sợ lớn hơn khoảng cách Pacman tới ma
+		- Chú ý: các tham số vẫn được dò ngẫu nhiên 
